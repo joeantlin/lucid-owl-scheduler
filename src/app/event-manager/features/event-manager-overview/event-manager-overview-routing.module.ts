@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { EventCreatorOverviewComponent } from './event-creator-overview.component';
+import { EventManagerOverviewComponent } from './event-manager-overview.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: EventCreatorOverviewComponent,
+    component: EventManagerOverviewComponent,
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
 })
-export class EventCreatorOverviewRoutingModule {}
+export class EventManagerOverviewRoutingModule {}

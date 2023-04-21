@@ -28,7 +28,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/css/styles.scss",
+              "src/css/reset.scss",
+              "src/css/theme.scss"
             ],
             "scripts": []
           },
@@ -96,12 +98,28 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/css/styles.scss",
+              "src/css/reset.scss",
+              "src/css/theme.scss"
             ],
             "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
